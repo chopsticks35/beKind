@@ -25,6 +25,13 @@ html {
     margin: 0 auto;
 }
 
+section {
+ padding: 80px 0;   
+}
+
+.features-box {
+    padding: 1%;
+}
 /*----------HEADER-----------*/
 
 header {
@@ -49,17 +56,78 @@ header {
 
 /*----------HEADINGS-----------*/
 
-h1 {
-/*    override normalize*/
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 240%;
+/*consistency in headings*/
+h1,
+h2,
+h3 {
+
 /*    big headline, decrease font weight and add letter and word spacing*/
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    
+    
+}
+
+h1 {
+/*    override normalize*/
+    margin-top: 0;
+    
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
     word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/*css only line using a psuedo class after*/
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+/*    after psuedo class must specify content*/
+    content: " ";
+    width: 100px;
+/*    center */
+    margin: 0 auto;
+/*    consistent margins for white space */
+    margin-top: 30px;
+}
+
+/*----------PARAGRAPHS-----------*/
+
+.features-text {
+/*    typography 120-145% - using max*/
+    line-height: 145%;
+/*        make less wide */
+    width: 70%;
+/*    to center - width 70%, remaining 30% on both sides */
+    margin-left: 15%;
+}
+.features-box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*----------ICONS-----------*/
+
+.icon-features {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
 }
 
 /*----------BUTTONS-----------*/
