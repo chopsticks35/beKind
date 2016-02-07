@@ -1,4 +1,6 @@
-/*set to defualt 0margin and padding, border box*/
+/*----------SET UP-----------*/
+
+/*set to defualt 0 margin and padding, border box*/
 * {
 margin: 0;
 padding: 0;
@@ -14,12 +16,16 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
+/*----------REUSABLE COMPONENTS-----------*/
+
 .row {
 /*    only pixels - all else percentages*/
     max-width: 1140px;
 /*    center all rows - top and bottom 0 and left and right auto */
     margin: 0 auto;
 }
+
+/*----------HEADER-----------*/
 
 header {
 /*    darken image for text to be legible*/
@@ -41,6 +47,8 @@ header {
     transform: translate(-50%, -50%);
 }
 
+/*----------HEADINGS-----------*/
+
 h1 {
 /*    override normalize*/
     margin-top: 0;
@@ -53,6 +61,8 @@ h1 {
     letter-spacing: 1px;
     word-spacing: 4px;
 }
+
+/*----------BUTTONS-----------*/
 
 /*link and visitied buttons look the same*/
 .btn:link, 
@@ -96,6 +106,63 @@ h1 {
     border: 1px solid #cf6d172;
     color: #fff;   
 }
+
+/*----------HEADER-----------*/
+
+header {
+/*    darken image for text to be legible*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/yoga.jpeg);
+    background-size: cover;
+    background-position: center;
+/*responsive - 100% of viewport - fill all of viewport with image*/
+    height: 100vh;
+}
+
+.headline-text-box {
+/*    absolutely positioned box - vertically and horizontally centered*/
+    position: absolute;
+/*    assign width of row*/
+    width: 1000px;
+/*    center*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lotus {
+    height: 100px;
+    width: auto;
+    float:left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding:
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active { 
+    border-bottom: 2px solid #e67e22;
+}
+
 
 
 
