@@ -268,7 +268,7 @@ header {
 /*    darken with opacity and background color */
     opacity: 0.7;
     
-    transform: scale(1.30);
+    transform: scale(1.5);
 /*    animate */
     transition: transform 0.5s, opacity 0.5s;
 }
@@ -278,6 +278,31 @@ header {
     transform: scale(1.03);
 /*    return to opacity 1*/
     opacity: 1;
+}
+
+/*----------WIDGET APP-----------*/
+
+.app-container {
+    margin-top: 30px;
+}
+
+.app-container:first-child {
+    text-align: right;
+    padding-right: 3%;
+    
+}
+
+.app-container:last-child {
+    padding-left: 3%;
+    
+}
+
+ .app-photo {
+     width: 50%;
+}
+
+.app-steps {
+    
 }
 
 
