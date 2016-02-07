@@ -1,0 +1,104 @@
+/*set to defualt 0margin and padding, border box*/
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*set html and body - backgorund color for htis white, text color for entire project, font family, font weight and size, optimize leg and overflow hidden*/
+html {
+	background-color: : #fff;
+	color: #555;
+	font-family: "Lato", "Arial", sans-serif;
+	font-weight: : 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.row {
+/*    only pixels - all else percentages*/
+    max-width: 1140px;
+/*    center all rows - top and bottom 0 and left and right auto */
+    margin: 0 auto;
+}
+
+header {
+/*    darken image for text to be legible*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/yoga.jpeg);
+    background-size: cover;
+    background-position: center;
+/*responsive - 100% of viewport - fill all of viewport with image*/
+    height: 100vh;
+}
+
+.headline-text-box {
+/*    absolutely positioned box - vertically and horizontally centered*/
+    position: absolute;
+/*    assign width of row*/
+    width: 1000px;
+/*    center*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+/*    override normalize*/
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+/*    big headline, decrease font weight and add letter and word spacing*/
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/*link and visitied buttons look the same*/
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+/*    transition button using CSS3*/
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+  
+}
+
+.btn-full:link,
+.btn-full:visited {
+/*    use flat  ui color */
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-reverse:link,
+.btn-reverse:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;   
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17; 
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+
+.btn-reverse:hover,
+.btn-reverse:active {
+    border: 1px solid #cf6d172;
+    color: #fff;   
+}
+
+
+
+
+
+
