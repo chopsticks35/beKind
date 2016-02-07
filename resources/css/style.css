@@ -231,6 +231,29 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/*----------PHOTO GALLERY-----------*/
+
+.showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.showcase-photo {
+    width: 100%;
+    margin: 0;
+}
+
+.showcase-photo img {
+    width: 100%;
+    height: 300px;;
+}
+
 
 
 
