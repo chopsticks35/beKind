@@ -242,7 +242,7 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
-/*----------FEATURES-----------*/
+/*----------FEATURES SECTION-----------*/
 
  .section-features .features-text {
  margin-bottom: 30 px;   
@@ -344,8 +344,16 @@ header {
     margin-right: 10px; 
 }
 
+/*----------RETAIL SECTION-----------*/
+
 .retail {
     
+}
+
+.features-box img {
+    width:100%;
+    height:auto;
+    margin-bottom: 15px;
 }
 
 
