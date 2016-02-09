@@ -293,8 +293,8 @@ header {
 
 /*----------WIDGET APP-----------*/
 
-.app-container {
-   
+.widget-app {
+   margin-bottom: 0;
 }
 
 .app-container:first-child {
@@ -347,6 +347,8 @@ header {
 /*----------RETAIL SECTION-----------*/
 
 .retail {
+    
+ margin-top: 0;
     
 }
 
