@@ -16,10 +16,13 @@ html {
 	text-rendering: optimizeLegibility;
 }
 
-.clear {
+/*use clearfix to clear the floats - clear the float aftern an element*/
+/*assign to parent elements because child elements have the float prorety*/
+/*clears float right after ul element*/
+clearfix {
     zoom: 1
 }
-.clear:after {
+.clearfix:after {
     content: ".";
     clear: both;
     display: block;
@@ -140,6 +143,38 @@ h2:after {
     color: #e67e22;
     margin-bottom: 10px;
 }
+
+.icon-retail {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+/*    align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*----------LINKS-----------*/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22; 
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
 
 /*----------BUTTONS-----------*/
 
@@ -293,25 +328,30 @@ header {
 
 /*----------WIDGET APP-----------*/
 
-.widget-app {
-   margin-bottom: 0;
+/*app subtle background color to separate esections further*/
+
+
+
+ section.widget-app {
+    margin-bottom: 0;
+    background-color: #f4f4f4;
 }
 
 .app-container:first-child {
     text-align: right;
-     margin-top: 30px;
+    margin-top: 30px;
     padding-right: 3%;
     
 }
 
 .app-container:last-child {
-    margin-bottom: 70px;
-    padding-right: 3%
-    
+    margin-top: 75px;
 }
 
+
  .app-photo {
-     width: 60%;
+     width: 40%;
+     margin-top: 0;
 }
 
 .app-steps {
@@ -330,12 +370,18 @@ header {
     border-radius: 50%;
     height: 55px;
     width: 55px;
-    text-align:center;
+    text-align: center;
     padding: 5px;
     float: left;
-    font-size: 130%;
+    font-size: 150%;
     margin-right: 25px;
     
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border:0;
+    text-decoration: none;
 }
 
 .btn-app img {
@@ -347,9 +393,8 @@ header {
 /*----------RETAIL SECTION-----------*/
 
 .retail {
-    
  margin-top: 0;
-    
+
 }
 
 .features-box img {
@@ -357,6 +402,12 @@ header {
     height:auto;
     margin-bottom: 15px;
 }
+
+
+.retail-features {
+    margin-bottom: 5px;
+}
+
 
 
 
