@@ -10,6 +10,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
     <!--dev script-->
     <script type="text/javascript" src="mainScript.js"></script>
+    <!--    fusioncharts plug in -->
+    <script type="text/javascript" src="/path/to/fusioncharts.js"></script>
+    <script type="text/javascript" src="/path/to/angular.js"></script>
+    <script type="text/javascript" src="/path/to/angular-fusioncharts.js">      </script>
 <!--   external icon fonts-->
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="vendors/css/flaticon.css">
@@ -21,6 +25,12 @@
     <title>Be Kind Donation-Based Yoga Studio</title>
 </head>
 <body ng-controller="myController">
+    <div fusioncharts
+       width="600"
+       height="400"
+       type="column2d"
+       dataSource="" >
+    </div>
 <!--    header element-->
     <header>
         <nav>
