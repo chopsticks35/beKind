@@ -158,6 +158,20 @@ h2:after {
     margin-top: -5px;
 }
 
+.icon-retail {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+/*    align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
 /*----------LINKS-----------*/
 
 a:link,
@@ -230,6 +244,8 @@ header {
     background-position: center;
 /*responsive - 100% of viewport - fill all of viewport with image*/
     height: 100vh;
+/*    scrolling over fixed photo effect   */
+    background-attachment: fixed;
 }
 
 .headline-text-box {
@@ -408,7 +424,84 @@ header {
     margin-bottom: 5px;
 }
 
+/*----------CLIENT REVIEWS SECTION-----------*/
 
+.client-reviews {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(img/background-reviews-section.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+/*    scroll effect again - fixed photo background image*/
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    positon: relative;
+    margin-top: 40px;
+}
+
+/*use of psudo class before - designate content*/
+/*use ISO for quote sign*/
+blockquote:before {
+    display: block;
+    content:"\201C";
+    font-size: 500%;
+    position: absolute;
+    left: -10;
+}
+
+cite {
+    display: block;
+    margin-top: 25px;
+    font-size: 90%;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*----------ACTION SECTION-----------*/
+
+.action-section {
+    background-color: #f4f4f4;
+}
+
+/* needed to create class inside column due to affecting width - 90%*/
+.action-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+/*    center -take 1/2 of remaining 10% - 5% on both sides */
+    margin-left: 5%;
+}
+
+/*style the divs inside*/
+.action-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;  
+}
+
+.sign-up {
+    font-size: 200%;
+    font-weight: 100;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.make-action {
+    font-size: 80%;
+}
+
+.action-box ul li {
+    list-style: none;
+    padding: 5px 0;
+}
 
 
 
