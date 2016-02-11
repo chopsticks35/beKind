@@ -6,20 +6,11 @@
 <!--	external style sheets-->
 	<link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/Grid.css">
-    <!--ng script-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
-    <!--dev script-->
-    <script type="text/javascript" src="mainScript.js"></script>
-    <!--    fusioncharts plug in -->
-<!--
-    <script type="text/javascript" src="/path/to/fusioncharts.js"></script>
-    <script type="text/javascript" src="/path/to/angular.js"></script>
-    <script type="text/javascript" src="/path/to/angular-fusioncharts.js"></script>
--->
 <!--   external icon fonts-->
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+<!--    css animations  -->
     <link rel="stylesheet" href="vendors/css/flaticon.css">
-<!--    <link rel="stylesheet" href="vendors/css/MyIcons%2520(1)/flaticon.css">-->
 <!--    dev stylesheet-->
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 <!--    dev queries-->
@@ -38,14 +29,16 @@
 <!--    header element-->
     <header>
         <nav>
+<!--         test for class="sticky"-->
             <div class="row">
                 <img src="resources/img/lotus.jpeg" alt="lotusLogo" class="lotus">
                 <ul class="main-nav">
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">Staff</a></li>
+                    <li><a href="#action">Schedule</a></li>
+                    <li><a href="#staff-photos">Staff</a></li>
                     <li><a href="#">Reports</a></li>
-                    <li><a href="#">Retail</a></li>
-                    <li><a href="#">Pay</a></li>
+                    <li><a href="#retail-items">Retail</a></li>
+                    <li><a href="#action">Pay</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                     <li><a href="#">Sign In</a></li>
                 </ul>
             </div>    
@@ -53,12 +46,12 @@
         <div class="headline-text-box">
 <!--            only ONE h1-->
             <h1>Be Kind:<br>a donation-based yoga studio</h1>
-                <a class="btn btn-full" href="#">Practice</a>
-                <a class="btn btn-reverse" href="#">Sign-Up</a>  
+                <a class="btn btn-full js--scroll-to-action" href="#">Practice</a>
+                <a class="btn btn-reverse js--scroll-to-widget" href="#">Our App</a>  
         </div>
     </header>
     
-    <section class="section-features">
+    <section class="section-features js--section-features">
 <!--        features section-->
         <div class="row">
 <!--            special character em dash-->
@@ -66,7 +59,7 @@
             <p class="features-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.features-textfeatures-text features-textfeatures-text  features.</p>
         </div>
 <!--         use grid for columns-->
-        <div class="row">
+        <div class="row js--waypoint-features">
 <!--            width of 23.8% - refer to grid-->
             <div class="col span-1-of-4 features-box">
                 <i class="flaticon-inverted8 icon-features"></i>
@@ -91,7 +84,7 @@
         </div>
     </section>
 <!--    Photo Gallery Section   -->
-    <section class="photo-gallery">
+    <section class="photo-gallery" id="staff-photos">
 <!--        not using grid - want photos to span entire width - use u list and figure no fig catption-->
         <ul class="showcase clearfix">
             <li>
@@ -139,13 +132,13 @@
         </ul>
     </section>
 <!--    app section   -->
-    <section class="widget-app">
+    <section class="widget-app js--widget-app-section">
         <div class="row">
             <h2>Check out our mobile app!</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 app-container"> 
-                <img src="resources/img/iPhone.jpg" class="app-photo">
+                <img src="resources/img/iPhone.jpg" class="app-photo js--waypoint-photo">
             </div>
             <div class="col span-1-of-2 app-container">
                 <div class="app-steps">
@@ -165,11 +158,11 @@
         </div>
     </section>
 <!--    Retail Section   -->
-    <section class="retail">
+    <section class="retail" id="retail-items">
         <div class="row">
             <h2>See our retail items</h2>
         </div>
-        <div class="row">
+        <div class="row js--waypoint-retail">
             <div class="col span-1-of-4 features-box">
                 <img src="resources/img/mala.jpg">
                 <h3>Love Mala</h3>
@@ -247,13 +240,13 @@
         </div>
     </section>
     
-    <section class="action-section">
+    <section class="action-section js--action-section" id="action">
         <div class="row">
             <h2>Take Action!</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="action-box">
+                <div class="action-box js--waypoint-action">
                     <div>
                     <h3>Sign Up</h3>
                     <p class="sign-up">Account</p>
@@ -273,7 +266,7 @@
             </div>
             
             <div class="col span-1-of-3">
-                <div class="action-box">
+                <div class="action-box js--waypoint-action">
                 <div>
                     <h3>Schedule</h3>
                     <p class="sign-up">Classes</p>
@@ -293,7 +286,7 @@
             </div>
             
             <div class="col span-1-of-3">
-                <div class="action-box">
+                <div class="action-box js--waypoint-action">
                 <div>
                     <h3>See Staff</h3>
                     <p class="sign-up">Teachers</p>
@@ -315,7 +308,7 @@
         </div>
     </section>
     
-    <section class="form-section">
+    <section class="form-section" id="contact-us">
         <div class="row">
             <h2>Contact Us Today!</h2>
         </div>
@@ -411,5 +404,25 @@
             </p>
         </div>
     </footer>
+<!--    scripts    -->
+    <!--ng script-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+<!--    calendar-->
+    <script src="js/daypilot/daypilot-all.min.js" type="text/javascript"></script>
+    <!--dev script-->
+    <script type="text/javascript" src="mainScript.js"></script>
+    <!--    fusioncharts plug in -->
+<!--
+    <script type="text/javascript" src="/path/to/fusioncharts.js"></script>
+    <script type="text/javascript" src="/path/to/angular.js"></script>
+    <script type="text/javascript" src="/path/to/angular-fusioncharts.js"></script>
+-->
+<!--    js libraries  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
 </body>
 </html>

@@ -258,6 +258,7 @@ header {
     margin-top: 20px;
 }
 
+/*  Main nav */
 .main-nav {
     float: right;
     list-style: none;
@@ -284,6 +285,36 @@ header {
 .main-nav li a:active { 
     border-bottom: 2px solid #e67e22;
 }
+
+/* sticky nav */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited  {
+    padding: 8px 0;
+    color: #555;
+}
+
+.sticky .lotus {
+    width: 4%;
+    height: 4%;
+    margin: 5px 0;
+}
+
+
 
 /*----------FEATURES SECTION-----------*/
 
@@ -638,3 +669,21 @@ footer p {
     color: #888;
     text-align: center;
 }
+
+/*---------Animations-----------*/
+
+.js--waypoint-features,
+.js--waypoint-photo,
+.js--waypoint-retail {
+    opacity: 0;
+}
+
+.js--waypoint-features .animated,
+.js--waypoint-photo .animated,
+.js--waypoint-retail .animated {
+    opacity: 1;
+}
+
+
+
+
