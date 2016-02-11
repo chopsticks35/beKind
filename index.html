@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html ng-app="myApp" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,9 +11,11 @@
     <!--dev script-->
     <script type="text/javascript" src="mainScript.js"></script>
     <!--    fusioncharts plug in -->
+<!--
     <script type="text/javascript" src="/path/to/fusioncharts.js"></script>
     <script type="text/javascript" src="/path/to/angular.js"></script>
-    <script type="text/javascript" src="/path/to/angular-fusioncharts.js">      </script>
+    <script type="text/javascript" src="/path/to/angular-fusioncharts.js"></script>
+-->
 <!--   external icon fonts-->
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="vendors/css/flaticon.css">
@@ -88,6 +90,7 @@
             </div>
         </div>
     </section>
+<!--    Photo Gallery Section   -->
     <section class="photo-gallery">
 <!--        not using grid - want photos to span entire width - use u list and figure no fig catption-->
         <ul class="showcase clearfix">
@@ -135,6 +138,7 @@
             </li>
         </ul>
     </section>
+<!--    app section   -->
     <section class="widget-app">
         <div class="row">
             <h2>Check out our mobile app!</h2>
@@ -160,6 +164,7 @@
             </div>
         </div>
     </section>
+<!--    Retail Section   -->
     <section class="retail">
         <div class="row">
             <h2>See our retail items</h2>
@@ -170,7 +175,7 @@
                 <h3>Love Mala</h3>
                 <div class="retail-features">
                 <i class="ion-ios-flower icon-retail"></i>
-                    Just for Valentines Day
+                    Valentines Day Gift
                 </div>
                 <div class="retail-features">
                 <i class="ion-ios-flower-outline icon-retail"></i>
@@ -198,7 +203,7 @@
                 </div>
                 <div class="retail-features">
                 <i class="ion-ios-flower-outline icon-retail"></i>
-                    <a href="#">Sandelwood Rudraksha</a>
+                    <a href="#">Sandelwood Rudraks</a>
                 </div>
             </div>
             <div class="col span-1-of-4 features-box">
@@ -215,7 +220,7 @@
             </div>
         </div>
     </section>
-    
+<!--    Client Reviews Section   -->
     <section class="client-reviews">
         <div class="row">
             <h2>Come as you are ... Pay as you can</h2>
@@ -229,13 +234,13 @@
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
-                    This studio is absolutely wonderful. Moniqua, the owner is super welcoming and friendly. THIS STUDIO IS 100% DONATION-BASED! I attended a Y12SR training there as well as classes with Ti, Keturah, and Kim and they were all wonderful. There is a great energy here- please come show your support! Karma is real!
+                    This studio is absolutely wonderful. Moniqua, the owner is super welcoming and friendly. THIS STUDIO IS 100% DONATION-BASED! I attended a Y12SR training there as well as classes with Ti, Keturah, and Kim and they were all wonderful. There is a great energy; please come show your support! Karma is real!
                     <cite><img src="resources/img/client2.png">Emily Walkcup</cite>
                 </blockquote>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
-                    Awesome Yoga Studio in a great location. All the instructors were incredibly helpful and kind. I joined in on Saturday's community yoga class and left feeling refreshed and like my body had an extreme work out.
+                    Awesome Yoga Studio in a great location. All the instructors were incredibly helpful and kind. I joined in on Saturday's community yoga class and left feeling refreshed and like my body had an extreme work out.  Ti is a wonderful teacher and I left feeling relaxed and inspired!  This studio is a true gem.
                     <cite><img src="resources/img/client3.jpg">Diana Gray</cite>
                 </blockquote>
             </div>
@@ -315,13 +320,14 @@
             <h2>Contact Us Today!</h2>
         </div>
         <div class="row">
-            <form method="post" action="#" class="contact-form">
+            <form method="post" action="mailto:tiwegmeyeryoga@gmail.com" ng-submit="myForm.submitForm()" class="contact-form">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="text" name="name" id ="name" placeholder="Enter your name" required>
+                        <input type="text" name="name" id ="name" placeholder="Enter your name" required ng-model="myForm.name" ng-minlength="6" ng-maxlength="18">
+<!--                      possibly use ng-pattern="/^\d+$/-->
                     </div>
                 </div>
                 <div class="row">
@@ -329,7 +335,8 @@
                         <label for="email">Email</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="email" name="email" id ="email" placeholder="Enter your email" required>
+                        <input type="email" name="email" id ="email" placeholder="Enter your email" ng-required ng-model="myForm.email">
+<!--                       possibly use ng-pattern="/.+@\..+/"-->
                     </div>
                 </div>
                 <div class="row">
@@ -337,7 +344,7 @@
                         <label for="hear-us">How did you hear about us?</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <select name="hear-us" id="hear-us">
+                        <select name="hear-us" id="hear-us" ng-model="myForm.hear" ng-options="obj.id as obj.name for obj in myForm.options"><option value="" class="select-form">Please choose one</option>
                             <option value="referrals">Referrals</option>
                             <option value="web">Web Search</option>
                             <option value="facebook" selected>Facebook</option>
@@ -350,7 +357,8 @@
                         <label>Subscribe to our newletter?</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <input type="checkbox" name="newsletter" id ="newsletter" checked> Yes, please!
+                        <input type="checkbox" name="newsletter" id ="newsletter" checked ng-model="myForm.wantNewsletter"> Yes, please!
+<!--                      can also use: ng-true-value="yes" ng-false-value="no"-->
                     </div>
                 </div>
                 <div class="row">
@@ -358,7 +366,7 @@
                         <label>Email us now</label>
                     </div>
                     <div class="col span-2-of-3">
-                        <textarea name="message" placeholder="Enter your message"></textarea>
+                        <textarea name="message" placeholder="Enter your message" ng-model="myForm.message"></textarea>
                     </div>
                 </div>
                 <div class="row">
@@ -370,6 +378,10 @@
                     </div>
                 </div>
             </form>
+            <div class="form-test">
+                <p>{{myForm.name}} {{myForm.email}} {{myForm.hear}} {{myForm.wantNewsletter}}
+                {{myForm.message}}</p>
+            </div>
         </div>
     </section>
 <!----- FOOTER ----->

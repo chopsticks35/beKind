@@ -537,10 +537,20 @@ input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
 
-/*pseudo class to get rid of chrom blue outline for all elements */
+/*pseudo class to get rid of chrome blue outline for all elements */
 
 *:focus {
     outline: none;
+}
+
+/* need to figure out how to style */
+.select-form {
+    font-style: italic;
+}
+;
+.form-test p {
+    font-style: italic;
+    color: #249d24;
 }
 
 
@@ -621,7 +631,6 @@ footer {
 .ion-social-youtube:hover {
     color: #bb0000;
 }
-
 
 
 footer p {
