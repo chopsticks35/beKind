@@ -158,20 +158,6 @@ h2:after {
     margin-top: -5px;
 }
 
-.icon-retail {
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #e67e22;
-    font-size: 120%;
-    margin-right: 10px;
-    
-/*    align text and icons */
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
-}
-
 /*----------LINKS-----------*/
 
 a:link,
@@ -352,11 +338,13 @@ header {
 
 /*app subtle background color to separate esections further*/
 
-
-
  section.widget-app {
     margin-bottom: 0;
     background-color: #f4f4f4;
+}
+
+.app-container {
+    margin-top: 30px;
 }
 
 .app-container:first-child {
