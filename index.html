@@ -3,9 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Be Kind Yoga Studio - a demo of a yoga studio website to be completed witha mobile app">
 <!--	external style sheets-->
 	<link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/Grid.css">
+    <link href="vendors/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/jsreports-all.min.css"
 <!--   external icon fonts-->
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="vendors/css/animate.css">
@@ -20,12 +23,14 @@
     <title>Be Kind Donation-Based Yoga Studio</title>
 </head>
 <body ng-controller="myController">
+<!--
     <div fusioncharts
        width="600"
        height="400"
        type="column2d"
        dataSource="" >
     </div>
+-->
 <!--    header element-->
     <header>
         <nav>
@@ -35,12 +40,13 @@
                 <ul class="main-nav">
                     <li><a href="#action">Schedule</a></li>
                     <li><a href="#staff-photos">Staff</a></li>
-                    <li><a href="#">Reports</a></li>
+                    <li><a href=https://clients.mindbodyonline.com/classic/admhome?studioid=136452>Reports</a></li>
                     <li><a href="#retail-items">Retail</a></li>
-                    <li><a href="#action">Pay</a></li>
+<!--                    <li><a href="#action">Pay</a></li>-->
                     <li><a href="#contact-us">Contact Us</a></li>
-                    <li><a href="#">Sign In</a></li>
+<!--                    <li><a href="#">Sign In</a></li>-->
                 </ul>
+                <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
             </div>    
         </nav>
         <div class="headline-text-box">
@@ -280,7 +286,7 @@
                     </ul>
                 </div>
             <div>
-                <a href="#" class="btn btn-full">Sign In Now</a>
+                <a href="schedule.html" class="btn btn-full">Sign In Now</a>
                  </div>
             </div>
             </div>
@@ -301,7 +307,7 @@
                     </ul>
                 </div>
             <div>
-                <a href="#" class="btn btn-full">Sign Up Now</a>
+                <a href="resources/img/staff.jpg.png" class="btn btn-full">List Now</a>
                  </div>
             </div>
             </div>
@@ -313,7 +319,7 @@
             <h2>Contact Us Today!</h2>
         </div>
         <div class="row">
-            <form method="post" action="mailto:tiwegmeyeryoga@gmail.com" ng-submit="myForm.submitForm()" class="contact-form">
+            <form ng-submit="myForm.submitForm()" class="contact-form">
                 <div class="row">
                     <div class="col span-1-of-3">
                         <label for="name">Name</label>
@@ -377,6 +383,7 @@
             </div>
         </div>
     </section>
+    
 <!----- FOOTER ----->
     <footer>
         <div class="row">
@@ -409,8 +416,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
 <!--    calendar-->
     <script src="js/daypilot/daypilot-all.min.js" type="text/javascript"></script>
-    <!--dev script-->
-    <script type="text/javascript" src="mainScript.js"></script>
+    <!-- reports script-->
+    <script src="vendors/js/jsreports-all.min.js"></script>
     <!--    fusioncharts plug in -->
 <!--
     <script type="text/javascript" src="/path/to/fusioncharts.js"></script>
@@ -423,6 +430,8 @@
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/scripts.js"></script>
+    <script type="text/javascript" src="resources/js/scripts.js"></script>
+    <!--dev script-->
+    <script type="text/javascript" src="mainScript.js"></script>
 </body>
 </html>

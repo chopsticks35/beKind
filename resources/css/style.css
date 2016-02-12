@@ -286,6 +286,21 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* mobile nav */
+
+.mobile-nav-icon {
+    float:right;
+    margin-top: 30px;
+/*    cursor as pointer-hand */
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 /* sticky nav */
 
 .sticky {
@@ -583,7 +598,6 @@ input[type=checkbox] {
     font-style: italic;
     color: #249d24;
 }
-
 
 /* -----------Footer–––––––––––––––*/
 
