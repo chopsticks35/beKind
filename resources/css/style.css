@@ -463,6 +463,9 @@ header {
 .retail-features {
     margin-bottom: 5px;
 }
+.retail-features a {
+    font-size: 85%;
+}
 
 /*----------CLIENT REVIEWS SECTION-----------*/
 

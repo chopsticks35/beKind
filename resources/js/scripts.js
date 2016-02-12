@@ -65,4 +65,30 @@ $(document).ready(function() {
         offset: '50%'
     });
     
+    
+//    mobile nvaigation
+//    $('.js-nav-icon').click(function() {
+//        var nav = $('js-main-nav');
+//        var icon = $('js-main-icon i');
+//        
+//        nav.slideToggle(200);
+//        
+//        if (icon.hasClass('ion-navicon-round')) {
+//            icon.addClass('ion-close-round');
+//            icon.removeClass('ion-navicon-round');
+//        }
+//        else {
+//            icon.addClass('ion-navicon-round');
+//            icon.removeClass('ion-close-round');
+//        }
+//    });
+
+
+//  maps - jquery plug in
+
+    new GMaps({
+      div: '.map',
+      lat: -12.043333,
+      lng: -77.028333
+    });
 });

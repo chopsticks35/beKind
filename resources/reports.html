@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+	<head>
+		<title>REPORT POP UP</title>
+		<link rel="stylesheet" href="lightbox-style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <style>
+        /*body to match exercise*/
+body {
+    background-color: : #fff;
+	color: #555;
+	font-family: "Lato", "Arial", sans-serif;
+	font-weight: : 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+/*black overlay once js click*/
+.black_overlay{
+    display: none;
+	position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+/*content of lightbox*/
+.white_content {
+    display: none;
+	position: absolute;
+    top: 30%;
+	left: 20%;
+	width: 60%;
+	height: 60%;
+	padding: 16px;
+	border: 5px solid #ddd;
+    border-radius: 25px;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+    font-size: 15px;
+}
+
+body {
+/*    darken image for text to be legible*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/reports.jpeg);
+    background-size: cover;
+    background-position: center;
+/*responsive - 100% of viewport - fill all of viewport with image*/
+    height: 100vh;
+}
+
+.text-box p {
+    padding-top: 20px;
+    color: #fff;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+            }
+            
+    </style>
+	</head>
+	<body>
+        <header>
+		<div class="text-box"><p>
+Some examples of reports are:
+annual reports,
+auditor's reports,
+book reports,
+bound reports,
+budget reports,
+census reports,
+credit reports,
+demographic reports,
+expense report,
+experience report,
+inspection reports,
+military reports,
+police reports,
+policy reports,
+progress reports,
+recommendation reports,
+investigative reports,
+scientific reports,
+trip reports,
+white papers,
+appraisal reports,
+workplace reports,
+user reports,
+attendance reports,
+payroll reports,
+marketing reports,
+site visit reports.  To display a report click <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here.</a></p></div>
+		<div id="light" class="white_content"><h3>Program Performance</h3><p>
+Earned Revenue   -----   Unlimited Visit Pricing   -----   Option	Memberships   -----	  Limited Visit Pricing Option   -----	  Expired Series   -----	Total<br>
+Privates	 	 	 	 	 $15.00	 $15.00<br>
+Specialty Classes	 	 	 	 $117.00	 	 $117.00<br>
+Group Classes	 	 $6.50	 	 $218.50	 $118.50	 $343.50<br>
+Group Classes Autopay	 	 $89.71	 $129.99	 	 	 $219.70<br>
+Community Yoga	 	 	 	 	 $104.00	 $104.00<br>
+Workshops & Trainings	 	 	 $629.43	 	 $80.00	 $709.43<br>
+Events	 	 	 	 $275.00	 $60.00	 $335.00<br>
+Karma Yoga	 	 	 	 $173.67	 $12.00	 $185.67<br>
+Teacher Training	 	 	 $68.75	 	 	 $68.75<br>
+Yoga School: Series	 	 	 	 $313.88	 	 $313.88<br>
+
+Total:	 	 $96.21	 $828.17	 $1,098.04	 $389.50	 $2,411.92<br>
+</p><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
+		<div id="fade" class="black_overlay"></div>
+        </header>
+	</body>
+</html>
