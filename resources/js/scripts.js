@@ -85,9 +85,10 @@ $(document).ready(function() {
 
 //  maps - jquery plug in
 
-//    new GMaps({
-//      div: '.map',
-//      lat: -12.043333,
-//      lng: -77.028333
-//    });
+    new GMaps({
+        
+      div: '.map',
+      lat:  39.812769,
+      lng: -105.035159
+    });
 });

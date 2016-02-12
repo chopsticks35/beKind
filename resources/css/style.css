@@ -563,7 +563,7 @@ cite img {
 /* -----------Form Section–––––––––––––––*/
 
 .contact-form {
-    width: 60%;
+    width: 90%;
 /*    center in parent element */
     margin: 0 auto;
 }
@@ -591,6 +591,37 @@ input[type=checkbox] {
 *:focus {
     outline: none;
 }
+.map-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 552px;
+    margin-top: -10%;
+/*
+    margin: auto;
+    margin-top: -10%;
+    margin-bottom: 5%;
+    
+*/
+    position: relative;
+    z-index: 0;
+}
+
+.form-container {
+    
+    position: absolute;
+    width: 50%;
+    top:0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    height: 552px;
+    padding-top: 40px;
+}
 
 /* need to figure out how to style */
 .select-form {
@@ -605,6 +636,7 @@ input[type=checkbox] {
 /* -----------Footer–––––––––––––––*/
 
 footer {
+    margin-top: 10%
     font-size: 80%;
     background-color: #333;
     padding: 50px;
