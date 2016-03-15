@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Be Kind Yoga Studio - a demo of a yoga studio website to be completed witha mobile app">
-<!--	external style sheets-->
-	<link rel="stylesheet" href="vendors/css/normalize.css">
+<!--  external style sheets-->
+  <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/Grid.css">
     <link href="vendors/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/jsreports-all.min.css"
+  <!--   <link rel="stylesheet" type="text/css" href="vendors/css/jsreports-all.min.css" -->
 <!--   external icon fonts-->
     <link rel="stylesheet" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="vendors/css/animate.css">
 <!--    css animations  -->
     <link rel="stylesheet" href="vendors/css/flaticon.css">
 <!--    dev stylesheet-->
-	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 <!--    dev queries-->
-	<link rel="stylesheet" type="text/css" href="resources/css/mediaQueries.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/mediaQueries.css">
 <!--    external fonts-->
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic' rel='stylesheet' type='text/css'>
 <!--    favicons   -->
     <link rel="apple-touch-icon" sizes="57x57" href="/resources/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/resources/favicons/apple-touch-icon-60x60.png">
@@ -42,7 +42,7 @@
     <meta name="msapplication-TileImage" content="/resources/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <title>Be Kind Donation-Based Yoga Studio</title>
+    <title>Ti Wegmeyer the Coding Yogini</title>
 </head>
 <body ng-controller="myController">
 
@@ -50,25 +50,24 @@
     <header>
         <nav>
             <div class="row">
-                <img src="resources/img/logo.JPG" alt="lotusLogo" class="lotus">
+                <img src="resources/img/lotus.jpeg" alt="lotusLogo" class="lotus">
                 <ul class="main-nav js--main-nav">
                     <li><a href="#action">Schedule</a></li>
-                    <li><a href="#staff-photos">Staff</a></li>
-                    <li><a href="#retail-items">Retail</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
-                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#staff-photos">Photos</a></li>
+                    <li><a href="#retail-items">Malas</a></li>
+                  <li><a href="#contact-us">Contact Me</a></li>
                 </ul>
                 <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-            </div>    
+            </div>
         </nav>
         <div class="headline-text-box">
 <!--            only ONE h1-->
-            <h1>Oh Yeah Yoga:<br>yoga studio mobile app demo</h1>
+            <h1>Ti Wegmeyer:<br>the Coding Yogini</h1>
                 <a class="btn btn-full js--scroll-to-action" href="#">Practice</a>
-                <a class="btn btn-reverse js--scroll-to-widget" href="#">Our App</a>  
+                <a class="btn btn-reverse js--scroll-to-widget" href="#">My App</a>
         </div>
     </header>
-    
+
     <section class="section-features js--section-features">
 <!--        features section-->
         <div class="row">
@@ -152,17 +151,19 @@
 <!--    app section   -->
     <section class="widget-app js--widget-app-section">
         <div class="row">
-            <h2>Check out our mobile app!</h2>
+            <h2>On-the-Go-Yoga...with Ti!</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-2 app-container"> 
-                <img src="resources/img/iPhone.jpg" class="app-photo js--waypoint-photo">
+            <div class="col span-1-of-2 app-container">
+              <iframe src="http://localhost:8080/" width="375" height="667"></iframe>
+              <!--    iphone 6:      width="375" height="667"-->
+                <!-- <img src="resources/img/iPhone.jpg" class="app-photo js--waypoint-photo"> -->
             </div>
             <div class="col span-1-of-2 app-container">
                 <div class="app-steps">
                     <div>1</div>
                     <p>Download the app from the app store</p>
-                </div>    
+                </div>
                 <div class="app-steps">
                     <div>2</div>
                     <p>Log in with Facebook or Google</p>
@@ -257,7 +258,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="action-section js--action-section" id="action">
         <div class="row">
             <h2>Take Action!</h2>
@@ -282,7 +283,7 @@
                  </div>
             </div>
             </div>
-            
+
             <div class="col span-1-of-3">
                 <div class="action-box js--waypoint-action">
                 <div>
@@ -302,7 +303,7 @@
                  </div>
             </div>
             </div>
-            
+
             <div class="col span-1-of-3">
                 <div class="action-box js--waypoint-action">
                 <div>
@@ -325,18 +326,18 @@
             </div>
         </div>
     </section>
-    
+
 <!--  CONTACT FORM SECTION   -->
 <section class="form-section"  id="contact-us"></section>
 <div class="map-container">
-    
+
     <div class="map"></div>
-    
+
         <div class="form-container">
         <div class="row">
             <h2>Contact Us Today!</h2>
         </div>
-            
+
         <div class="row">
             <form method="post" action="mailer.php" ng-submit="myForm.submitForm()" class="contact-form">
                 <div class="row">
@@ -404,8 +405,8 @@
     </div>
 </div>
 </section>
-  
-    
+
+
 <!----- FOOTER ----->
     <footer>
         <div class="row">
